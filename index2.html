@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #000000;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: rgb(248, 244, 3);
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skills-list li {
+            margin-right: 40px;
+        }
+
+        .skills-list li:last-child {
+            margin-right: 0;
+        }
+
+        .skills-list li i {
+            font-size: 72px;
+            color: #333;
+            transition: transform 0.3s ease;
+        }
+
+        .skills-list li span {
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .skills-list li i:hover {
+            transform: scale(1.2);
+        }
+
+        .skill-info {
+            margin-top: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .skill-info p {
+            margin-bottom: 10px;
+        }
+
+        /* Logo Colors */
+        .fab.fa-python {
+            color: #3776AB;
+        }
+
+        .fab.fa-java {
+            color: #007396;
+        }
+
+        .fab.fa-cuttlefish {
+            color: #00599C;
+        }
+
+        .fas.fa-database {
+            color: #00758F;
+        }
+
+        .fas.fa-chart-bar {
+            color: #0C9F9D;
+        }
+        
+        
+        .fab.fa-css3 {
+            color: #2656e4;
+        }
+        .skills-list li {
+        margin-right: 40px;
+        position: relative; 
+    }
+
+    .skills-list li:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -20px; 
+        transform: translateY(-50%);
+        height: 60%; 
+        width: 1px;
+        background-color: #e10a0a; 
+    }
+
+    .skills-list li i:hover {
+        transform: scale(1.2);
+        color: #FFD700; 
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Skills</h1>
+        <br>
+        <ul class="skills-list">
+            <li>
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+                <div class="skill-info">
+                    <p>Python is a high-level programming language known for its simplicity and readability. It is widely used in web development, data analysis, artificial intelligence, and more.</p>
+                </div>
+            </li>
+            <li>
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+                <div class="skill-info">
+                    <p>Java is a versatile and widely-used programming language. It is known for its platform independence, making it suitable for developing applications across different operating systems.</p>
+                </div>
+            </li>
+            <li>
+                <i class="fab fa-cuttlefish"></i>
+                <span>C++</span>
+                <div class="skill-info">
+                    <p>C++ is an extension of the C programming language with additional features. It is widely used in game development, high-performance software, and other applications that require both low-level and high-level programming.</p>
+                </div>
+            </li>
+            <li>
+                <i class="fas fa-database"></i>
+                <span>Databases</span>
+                <div class="skill-info">
+                    <p>Databases are essential for storing and managing structured data. Commonly used databases include MySQL, PostgreSQL, and MongoDB. Understanding databases is crucial for developing data-driven applications.</p>
+                </div>
+            </li>
+            <li>
+                <i class="fas fa-chart-bar"></i>
+                <span>Digital Marketing</span>
+                <div class="skill-info">
+                    <p>Digital marketing involves promoting products or services using various online channels. It includes strategies such as search engine optimization (SEO), social media marketing, email marketing, and content marketing.</p>
+                </div>
+            </li>
+            <li>
+                <i class="fab fa-css3"></i>
+                <span>CSS</span>
+                <div class="skill-info">
+                    <p>CSS (Cascading Style Sheets) is a styling language used for describing the look and formatting of a document written in HTML. It is essential for creating visually appealing and responsive web pages.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

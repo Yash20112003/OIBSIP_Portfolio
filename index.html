@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media only screen and (max-width: 768px) {
+            /* Styles for small screens */
+            .nav-menu {
+                display: none;
+            }
+            .logo {
+                height: 150px;
+                width: 250px;
+            }
+            .detel a.download-btn,
+            .quote {
+                display: none;
+            }
+            .images {
+                display: none;
+            }
+        }
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            position: relative;
+        }
+
+        .nav-menu {
+            background-color: black;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        .nav-menu li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .nav-menu li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .nav-menu li a:hover {
+            border-color: #e31b6d;
+        }
+
+        .social a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .social a:hover {
+            color: #e31b6d;
+        }
+
+        .detel a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #e31b6d;
+            border: 2px solid #e31b6d;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .detel a:hover {
+            background-color: #fff;
+            color: #e31b6d;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            height: 200px;
+            width: 300px;
+        }
+
+        .detel a.download-btn {
+            background-color: #e31b6d;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .detel a.download-btn:hover {
+            background-color: #fff;
+            color: #e31b6d;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .quote {
+            position: fixed;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            animation: slide-in 1s ease-in-out;
+            transition: transform 0.3s ease;
+        }
+
+        .quote:hover {
+            transform: translateY(-50%) scale(1.1);
+            background-color: #060606;
+            color: #ffff09;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: fixed;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="background-animation"></div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index3.html" target="_blank">ABOUT</a></li>
+                <li><a href="index5.html" target="_blank">PORTFOLIO</a></li>
+                <li><a href="index2.html" target="_blank">SKILLS</a></li>
+                <li><a href="index4.html" target="_blank">CONTACT ME</a></li>
+            </ul>
+        </nav>
+        <img src="images/logo.png.png" class="logo">
+        <div class="detel">
+            <h1>I'M <span>Yash Vardhan</span></h1>
+            <p>This is my official Portfolio website to showcase my 
+                all works related to <br> web development.</p>
+            <a href="#" class="download-btn">Download CV</a>
+        </div>
+        <div class="quote">"Don't let failure define you, let it refine you."</div>
+        <div class="images">
+            <img src="images/shape.png" height="200">
+            <img src="images/jhy.png" class="boy">
+        </div>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</body>
+</html> 
